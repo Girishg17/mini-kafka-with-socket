@@ -161,8 +161,7 @@ def consumer_producer():
                                     conn.send(data_strin)  # type: ignore
                                     
                                 except:
-                                    print("error")
-                                    continue
+                                    break
 
                 except socket.error as err:
                     continue
